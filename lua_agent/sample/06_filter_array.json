@@ -1,0 +1,28 @@
+{
+  "wf": {
+    "vars": {
+      "parsedCsv": [
+        {
+          "SKU": "A001",
+          "Discount": "10%",
+          "Markdown": ""
+        },
+        {
+          "SKU": "A002",
+          "Discount": "",
+          "Markdown": "5%"
+        },
+        {
+          "SKU": "A003",
+          "Discount": null,
+          "Markdown": null
+        },
+        {
+          "SKU": "A004",
+          "Discount": "",
+          "Markdown": ""
+        }
+      ]
+    }
+  }
+}

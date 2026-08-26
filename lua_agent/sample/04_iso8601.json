@@ -1,0 +1,61 @@
+{
+  "wf": {
+    "vars": {
+      "json": {
+        "IDOC": {
+          "ZCDF_HEAD": {
+            "DELIVERY": "123456789",
+            "SUBJECT": "Order Confirmation",
+            "DATUM": "20231015",
+            "TIME": "153000",
+            "STATUS": "Confirmed",
+            "ROUTE": "Route 66",
+            "ROUTE_TXT": "Main Distribution Route",
+            "ZCDF_PACKAGES": [
+              {
+                "id": "PKG001",
+                "number": "EXIDV001",
+                "weight": "10",
+                "volume": "50",
+                "length": "100",
+                "width": "50",
+                "height": "30",
+                "items": [
+                  {
+                    "sku": "SKU001",
+                    "externalId": "MAT001",
+                    "quantity": "5",
+                    "weight": "2"
+                  },
+                  {
+                    "sku": "SKU002",
+                    "externalId": "MAT002",
+                    "quantity": "3",
+                    "weight": "1"
+                  }
+                ]
+              },
+              {
+                "id": "PKG002",
+                "number": "EXIDV002",
+                "weight": "20",
+                "volume": "60",
+                "length": "120",
+                "width": "60",
+                "height": "40",
+                "items": [
+                  {
+                    "sku": "SKU003",
+                    "externalId": "MAT003",
+                    "quantity": "10",
+                    "weight": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

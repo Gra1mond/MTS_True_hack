@@ -1,0 +1,128 @@
+@import './tokens.css';
+
+@font-face {
+  font-family: 'MTSText';
+  src: url('./fonts/mts/MTSText-Regular.woff2') format('woff2'),
+    url('./fonts/mts/MTSText-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSText';
+  src: url('./fonts/mts/MTSText-Medium.woff2') format('woff2'),
+    url('./fonts/mts/MTSText-Medium.woff') format('woff');
+  font-weight: 550;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSText';
+  src: url('./fonts/mts/MTSText-Bold.woff2') format('woff2'),
+    url('./fonts/mts/MTSText-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSText';
+  src: url('./fonts/mts/MTSText-Black.woff2') format('woff2'),
+    url('./fonts/mts/MTSText-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSCompact';
+  src: url('./fonts/mts/MTSCompact-Regular.woff2') format('woff2'),
+    url('./fonts/mts/MTSCompact-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSCompact';
+  src: url('./fonts/mts/MTSCompact-Bold.woff2') format('woff2'),
+    url('./fonts/mts/MTSCompact-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSCompact';
+  src: url('./fonts/mts/MTSCompact-Black.woff2') format('woff2'),
+    url('./fonts/mts/MTSCompact-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSExtended';
+  src: url('./fonts/mts/MTSExtended-Regular.woff2') format('woff2'),
+    url('./fonts/mts/MTSExtended-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTSExtended';
+  src: url('./fonts/mts/MTSExtended-Bold.woff2') format('woff2'),
+    url('./fonts/mts/MTSExtended-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply m-0 min-h-screen bg-page font-sans text-ink;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  #app {
+    @apply min-h-screen;
+  }
+}
+
+:root.theme-switching *,
+:root.theme-switching *::before,
+:root.theme-switching *::after {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    fill 0.35s ease,
+    stroke 0.35s ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root.theme-switching *,
+  :root.theme-switching *::before,
+  :root.theme-switching *::after {
+    transition: none !important;
+  }
+}
+
+/* Dark mode compatibility for fixed Tailwind utility usages */
+:root[data-theme='dark'] .text-black {
+  color: var(--color-text-primary) !important;
+}
+
+:root[data-theme='dark'] .border-black {
+  border-color: var(--color-border) !important;
+}

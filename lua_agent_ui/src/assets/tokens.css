@@ -1,0 +1,57 @@
+/**
+ * Тема UI: белый фон приложения, светло-серый сайдбар.
+ */
+:root {
+  --color-bg-page: #ffffff;
+  --color-bg-white: #ffffff;
+  --color-bg-sidebar: #ececef;
+  --color-bg-chat-active: #e2e2e8;
+  --color-text-primary: #000000;
+  --color-text-secondary: #555555;
+  --color-text-muted: #aaaaaa;
+  --color-accent: #e30611;
+  --color-border: #e0e0e0;
+  --color-input-border: #000000;
+  --color-code-bg: #f7f7f7;
+  --color-diff-red-bg: #ffeded;
+  --color-diff-green-bg: #edfff0;
+  --color-constraints-bg: #fff9e6;
+  --color-constraints-border: #f0c040;
+  --color-constraints-title: #7a6000;
+  --color-icon-header: #333333;
+  --color-code-keyword: #c678dd;
+  --color-code-string: #98c379;
+  --color-code-comment: #7f848e;
+  --color-code-number: #d19a66;
+  --color-code-default: #333333;
+
+  --font-ui: 'MTSText', system-ui, -apple-system, sans-serif;
+  --font-display: 'MTSCompact', 'MTSText', system-ui, -apple-system, sans-serif;
+  --font-extended: 'MTSExtended', 'MTSText', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+}
+
+:root[data-theme='dark'] {
+  --color-bg-page: #121316;
+  --color-bg-white: #1b1d22;
+  --color-bg-sidebar: #181a1f;
+  --color-bg-chat-active: #2a2d34;
+  --color-text-primary: #f2f3f5;
+  --color-text-secondary: #c6c8cd;
+  --color-text-muted: #8a8f99;
+  --color-accent: #ff4d57;
+  --color-border: #3a3d44;
+  --color-input-border: #5a5f69;
+  --color-code-bg: #121417;
+  --color-diff-red-bg: #3b1f25;
+  --color-diff-green-bg: #193124;
+  --color-constraints-bg: #2e2b1f;
+  --color-constraints-border: #8f7a2a;
+  --color-constraints-title: #f0d47a;
+  --color-icon-header: #d6d8dd;
+  --color-code-keyword: #c792ea;
+  --color-code-string: #a5d6a7;
+  --color-code-comment: #8f97a3;
+  --color-code-number: #ffb86c;
+  --color-code-default: #e6e8ec;
+}

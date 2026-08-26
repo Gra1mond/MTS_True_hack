@@ -1,0 +1,29 @@
+{
+  "wf": {
+    "vars": {
+      "json": {
+        "IDOC": {
+          "ZCDF_HEAD": {
+            "ZCDF_PACKAGES": [
+              {
+                "items": [
+                  {
+                    "sku": "A"
+                  },
+                  {
+                    "sku": "B"
+                  }
+                ]
+              },
+              {
+                "items": {
+                  "sku": "C"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
